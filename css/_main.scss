@@ -1,0 +1,284 @@
+#one {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+
+    h3 {
+        font-size: 1.9rem;
+        color: $dark-grayish-blue;
+        margin: 1rem;
+    }
+
+    p {
+        font-size: .9rem;
+        color: $grayish-blue;
+        line-height: 1.5;
+        margin: 1rem;
+    }
+}
+
+#two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2.5rem 0;
+
+    img {
+        height: 100%;
+        width: 80%;
+    }
+
+    .text div {
+        width: 65%;
+        margin-top: 2.5rem;
+
+        h3 {
+            font-size: 1.3rem;
+            color: $dark-grayish-blue;
+            margin: 1rem;
+        }
+
+        p {
+            font-size: .9rem;
+            color: $grayish-blue;
+            line-height: 1.5;
+            margin: 1rem;
+        }
+    }
+}
+
+#three {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    div:first-child {
+        width: 60%;
+        margin: auto;
+        padding: 3.5rem 0;
+    }
+
+    img {
+        width: 80%;
+        height: 100%;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+        color: $dark-grayish-blue;
+        margin: 1rem;
+    }
+
+    p {
+        font-size: .9rem;
+        color: $grayish-blue;
+        margin-top: .5rem;
+    }
+}
+
+#four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 7rem;
+
+    img {
+        margin: .8rem 0 1.1rem 0;
+    }
+
+    div {
+        width: 26%;
+        margin: .5rem 1.7rem;
+        padding: 1rem;
+
+        h1 {
+            font-size: 1.2rem;
+            color: $dark-grayish-blue;
+            margin: 1rem;
+        }
+
+        p {
+            font-size: .9rem;
+            color: $grayish-blue;
+            line-height: 1.5;
+        }
+    }
+}
+
+#five {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6rem;
+    margin: 1rem 1.7rem 7rem 1.7rem;
+}
+
+#six {
+    width: 50%;
+    text-align: center;
+    margin: auto auto 7rem auto;
+
+
+    .text {
+        margin-bottom: 1rem;
+
+        h1 {
+            font-size: 2rem;
+            color: $dark-grayish-blue;
+            margin: 1rem;
+        }
+
+        p {
+
+            font-size: .9rem;
+            color: $grayish-blue;
+            line-height: 1.5;
+        }
+    }
+
+    // .btn-list {
+    //     padding: 1rem 0;
+
+    //     button {
+    //         color: white;
+    //         font-size: .85rem;
+    //         font-weight: 600;
+    //         border: none;
+    //         outline: none;
+    //         border-radius: 2rem;
+    //         padding: .8rem 1.4rem;
+    //         cursor: pointer;
+    //     }
+
+    //     .ios {
+    //         background-color: $strong-cyan;
+    //         margin: .5rem;
+    //     }
+
+    //     .mac {
+    //         background-color: $light-blue;
+    //         margin: .5rem;
+    //     }
+    // }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: hsla(201, 11%, 66%, .1);
+    padding: 2rem 5rem;
+
+    .footer-logo {
+        width: 3em;
+        height: 3em;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        list-style: none;
+        gap: 1rem;
+
+        li:hover {
+            cursor: pointer;
+            color: $strong-cyan;
+        }
+    }
+
+    .social-icon {
+        display: flex;
+        gap: 2rem;
+
+        a {
+            color: $grayish-blue;
+
+            &:hover {
+                cursor: pointer;
+                color: $strong-cyan;
+            }
+        }
+
+
+    }
+}
+
+@media (max-width:768px) {
+    #one {
+        width: 90%;
+        margin-top: 3rem;
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: .8rem;
+        }
+    }
+
+    #two {
+        grid-template-columns: 1fr;
+        place-items: center;
+
+        .text div {
+            width: 90%;
+            margin: 3rem auto;
+            text-align: center;
+        }
+    }
+
+    #three {
+        div:first-child {
+            width: 85%;
+        }
+
+        .second {
+            text-align: center;
+            margin-top: 5rem;
+        }
+    }
+
+    #four {
+        flex-direction: column;
+        margin-bottom: 5rem;
+
+        div {
+            width: 90%;
+        }
+    }
+
+    #five {
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    #six {
+        width: 85%;
+
+        .text h1 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .btn-list {
+        button {
+            width: 80%;
+        }
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+
+        ul {
+            grid-template-columns: 1fr;
+            place-items: center;
+        }
+    }
+}

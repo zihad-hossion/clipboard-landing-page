@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+$strong-cyan: hsl(171, 66%, 44%);
+$light-blue: hsl(233, 100%, 69%);
+$dark-grayish-blue: hsl(210, 10%, 33%);
+$grayish-blue: hsl(201, 11%, 66%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.attribution {
+    font-size: 10px;
+    text-align: center;
+    padding: 1rem;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+header {
+    background: url('../images/bg-header-desktop.png') top center/cover no-repeat;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    width: 60%;
+    text-align: center;
+    padding: .7rem 0;
+
+    h1 {
+        font-size: 2.5rem;
+        color: $dark-grayish-blue;
+        padding: .5rem 0;
+    }
+
+    p {
+        font-size: 1rem;
+        color: $grayish-blue;
+        padding: .5rem;
+    }
+}
+
+.btn-list {
+    padding: 1rem 0;
+
+    button {
+        color: white;
+        font-size: .85rem;
+        font-weight: 600;
+        border: none;
+        outline: none;
+        border-radius: 2rem;
+        padding: .8rem 1.4rem;
+    }
+
+    .ios {
+        background-color: $strong-cyan;
+        box-shadow: 0px 3px 8px hsl(171, 66%, 44%), 1px 1px 0px hsl(171, 66%, 44%);
+        margin: .5rem;
+
+        &:hover {
+            cursor: pointer;
+            background-color: hsla(170, 83%, 41%, 0.7);
+        }
+    }
+
+    .mac {
+        background-color: $light-blue;
+        box-shadow: 2px 2px 8px hsl(233, 100%, 69%), 2px 2px 2px hsl(233, 100%, 69%);
+        margin: .5rem;
+
+        &:hover {
+            cursor: pointer;
+            background-color: hsla(233, 100%, 69%, .7);
+        }
+    }
+}
+
+@media (max-width:768px) {
+    header {
+        background: url("../images/bg-header-mobile.png") top center/cover no-repeat;
+        padding: 1rem .5rem;
+
+        img {
+            margin-top: 5rem;
+        }
+
+        .intro {
+            width: 100%;
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+}
